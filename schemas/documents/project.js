@@ -10,6 +10,21 @@ export default {
       type: "string",
     },
     {
+      name: "siteLink",
+      title: "Link to Site",
+      type: "url",
+    },
+    {
+      name: "year",
+      title: "Year",
+      type: "number",
+    },
+    {
+      name: "builtAt",
+      title: "Built at",
+      type: "string",
+    },
+    {
       name: "description",
       title: "Description",
       type: "portableText",
