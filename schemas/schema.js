@@ -3,6 +3,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import contactLinks from "./objects/contactLinks";
 import imageAsset from "./objects/imageAsset";
+import info from "./documents/info";
 import project from "./documents/project";
 import projectsArray from "./documents/projectsArray";
 import projectReference from "./objects/projectReference";
@@ -14,6 +15,7 @@ export default createSchema({
   types: schemaTypes.concat([
     contactLinks,
     imageAsset,
+    info,
     project,
     projectsArray,
     projectReference,
