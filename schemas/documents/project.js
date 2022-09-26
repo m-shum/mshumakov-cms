@@ -32,10 +32,7 @@ export default {
     {
       name: "cover",
       title: "Cover",
-      type: "image",
-      options: {
-        metadata: ["dimensions"],
-      },
+      type: "mux.video",
     },
     {
       name: "assets",
@@ -43,23 +40,14 @@ export default {
       type: "array",
       of: [
         {
-          name: "asset",
+          name: "imageAsset",
+          title: "Image",
           type: "image",
-          options: {
-            metadata: ["dimensions"],
-          },
-          fields: [
-            {
-              name: "caption",
-              title: "Caption",
-              type: "string",
-            },
-            {
-              name: "assetGroup",
-              title: "Asset Group",
-              type: "number",
-            },
-          ],
+        },
+        {
+          name: "videoAsset",
+          title: "Video Asset",
+          type: "mux.video",
         },
       ],
     },
