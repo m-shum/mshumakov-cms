@@ -1,5 +1,5 @@
 export default {
-  name: "projectRef",
+  name: "projectReference",
   title: "Project Item",
   type: "object",
   fields: [
