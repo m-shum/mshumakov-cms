@@ -14,7 +14,8 @@
     "@sanity/dashboard",
     "@sanity/desk-tool",
     "media",
-    "mux-input"
+    "mux-input",
+    "@sanity/color-input"
   ],
   "env": {
     "development": {

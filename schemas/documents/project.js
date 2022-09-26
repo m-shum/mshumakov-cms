@@ -37,7 +37,8 @@ export default {
     {
       name: "cover",
       title: "Cover",
-      type: "mux.video",
+      type: "image",
+      options: { metadata: ["dimensions"] },
     },
     {
       name: "assets",
@@ -48,11 +49,51 @@ export default {
           name: "imageAsset",
           title: "Image",
           type: "image",
+          options: { metadata: ["dimensions"] },
+          fields: [
+            {
+              name: "background",
+              title: "Background",
+              type: "color",
+            },
+            {
+              name: "caption",
+              title: "Caption",
+              type: "string",
+            },
+            {
+              name: "assetGroup",
+              title: "Asset Group",
+              type: "number",
+            },
+          ],
         },
         {
           name: "videoAsset",
           title: "Video Asset",
-          type: "mux.video",
+          type: "object",
+          fields: [
+            {
+              name: "asset",
+              title: "Asset",
+              type: "mux.video",
+            },
+            {
+              name: "background",
+              title: "Background",
+              type: "color",
+            },
+            {
+              name: "caption",
+              title: "Caption",
+              type: "string",
+            },
+            {
+              name: "assetGroup",
+              title: "Asset Group",
+              type: "number",
+            },
+          ],
         },
       ],
     },
