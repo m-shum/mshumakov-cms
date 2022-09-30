@@ -30,6 +30,11 @@ export default {
       type: "string",
     },
     {
+      name: "selectColor",
+      title: "Select Color",
+      type: "color",
+    },
+    {
       name: "description",
       title: "Description",
       type: "portableText",
@@ -51,11 +56,6 @@ export default {
           type: "image",
           options: { metadata: ["dimensions"] },
           fields: [
-            {
-              name: "background",
-              title: "Background",
-              type: "color",
-            },
             {
               name: "caption",
               title: "Caption",
