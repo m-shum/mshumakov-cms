@@ -73,8 +73,8 @@ export default {
           type: "object",
           fields: [
             {
-              name: "asset",
-              title: "Asset",
+              name: "video",
+              title: "Video",
               type: "mux.video",
             },
             {
