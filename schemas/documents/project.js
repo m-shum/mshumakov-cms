@@ -51,7 +51,8 @@ export default {
       type: "array",
       of: [
         {
-          name: "asset",
+          name: "image",
+          title: "Image",
           type: "image",
           options: { metadata: ["dimensions"] },
           fields: [
