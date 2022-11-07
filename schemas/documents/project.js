@@ -66,6 +66,11 @@ export default {
               title: "Asset Group",
               type: "number",
             },
+            {
+              name: "isMobile",
+              title: "Mobile",
+              type: "boolean",
+            },
           ],
         },
         {
@@ -92,6 +97,11 @@ export default {
               name: "assetGroup",
               title: "Asset Group",
               type: "number",
+            },
+            {
+              name: "isMobile",
+              title: "Mobile",
+              type: "boolean",
             },
           ],
         },
