@@ -25,7 +25,7 @@ export default {
       type: "number",
     },
     {
-      name: "builtAt",
+      name: "designedBy",
       title: "Built at",
       type: "string",
     },
