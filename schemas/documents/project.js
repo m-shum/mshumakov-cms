@@ -32,12 +32,20 @@ export default {
     {
       name: "designedBy",
       title: "Designed By",
-      type: "string",
+      type: "object",
+      fields: [
+        { name: "name", title: "Name", type: "string" },
+        { name: "url", title: "link", type: "url" },
+      ],
     },
     {
       name: "developedBy",
       title: "Developed By",
-      type: "string",
+      type: "object",
+      fields: [
+        { name: "name", title: "Name", type: "string" },
+        { name: "url", title: "link", type: "url" },
+      ],
     },
     {
       name: "selectColor",
