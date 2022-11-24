@@ -25,8 +25,18 @@ export default {
       type: "number",
     },
     {
+      name: "myRoles",
+      title: "My Roles",
+      type: "string",
+    },
+    {
       name: "designedBy",
-      title: "Built at",
+      title: "Designed By",
+      type: "string",
+    },
+    {
+      name: "developedBy",
+      title: "Developed By",
       type: "string",
     },
     {
