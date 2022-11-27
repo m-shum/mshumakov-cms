@@ -92,6 +92,23 @@ export default {
           ],
         },
         {
+          name: "video",
+          title: "Video",
+          type: "file",
+          fields: [
+            {
+              name: "width",
+              title: "Width",
+              type: "number",
+            },
+            {
+              name: "height",
+              title: "Height",
+              type: "number",
+            },
+          ],
+        },
+        {
           name: "videoAsset",
           title: "Video Asset",
           type: "object",
