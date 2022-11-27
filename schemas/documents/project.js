@@ -97,6 +97,21 @@ export default {
           type: "file",
           fields: [
             {
+              name: "caption",
+              title: "Caption",
+              type: "string",
+            },
+            {
+              name: "assetGroup",
+              title: "Asset Group",
+              type: "number",
+            },
+            {
+              name: "isMobile",
+              title: "Mobile",
+              type: "boolean",
+            },
+            {
               name: "width",
               title: "Width",
               type: "number",
