@@ -97,6 +97,11 @@ export default {
           type: "file",
           fields: [
             {
+              name: "video_sm",
+              title: "Video – Small",
+              type: "file",
+            },
+            {
               name: "caption",
               title: "Caption",
               type: "string",
