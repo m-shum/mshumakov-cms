@@ -123,38 +123,6 @@ export default {
             },
           ],
         },
-        {
-          name: "videoAsset",
-          title: "Video Asset",
-          type: "object",
-          fields: [
-            {
-              name: "video",
-              title: "Video",
-              type: "mux.video",
-            },
-            {
-              name: "background",
-              title: "Background",
-              type: "color",
-            },
-            {
-              name: "caption",
-              title: "Caption",
-              type: "string",
-            },
-            {
-              name: "assetGroup",
-              title: "Asset Group",
-              type: "number",
-            },
-            {
-              name: "isMobile",
-              title: "Mobile",
-              type: "boolean",
-            },
-          ],
-        },
       ],
     },
   ],
