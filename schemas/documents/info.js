@@ -26,5 +26,11 @@ export default {
       title: "Contact Links",
       type: "contactLinks",
     },
+    {
+      name: "resume",
+      title: "Resume",
+      type: "file",
+      accept: ".pdf",
+    },
   ],
 };

@@ -25,6 +25,16 @@ export default {
       type: "number",
     },
     {
+      name: "projectType",
+      title: "Project Type",
+      type: "string",
+    },
+    {
+      name: "technologies",
+      title: "Technologies",
+      type: "string",
+    },
+    {
       name: "myRoles",
       title: "My Roles",
       type: "string",
@@ -89,6 +99,21 @@ export default {
               title: "Mobile",
               type: "boolean",
             },
+            {
+              name: "isFullBleed",
+              title: "Full Bleed",
+              type: "boolean",
+            },
+            {
+              name: "hasFrame",
+              title: "Framed",
+              type: "boolean",
+            },
+            {
+              name: "frameColor",
+              title: "Frame Color",
+              type: "color",
+            },
           ],
         },
         {
@@ -115,6 +140,21 @@ export default {
               name: "isMobile",
               title: "Mobile",
               type: "boolean",
+            },
+            {
+              name: "isFullBleed",
+              title: "Full Bleed",
+              type: "boolean",
+            },
+            {
+              name: "hasFrame",
+              title: "Framed",
+              type: "boolean",
+            },
+            {
+              name: "frameColor",
+              title: "Frame Color",
+              type: "color",
             },
             {
               name: "width",

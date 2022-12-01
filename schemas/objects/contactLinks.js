@@ -1,4 +1,4 @@
-const services = ["email", "github", "twitter"];
+const services = ["email", "github", "twitter", "instagram"];
 
 export default {
   name: "contactLinks",
