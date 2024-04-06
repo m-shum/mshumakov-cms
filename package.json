@@ -14,16 +14,16 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/color-input": "^2.33.3",
-    "@sanity/dashboard": "^2.33.3",
-    "@sanity/eslint-config-studio": "^2.0.0",
-    "@sanity/vision": "^2.33.3",
-    "eslint": "^8.6.0",
-    "prop-types": "^15.7",
-    "react": "^17.0",
-    "react-dom": "^17.0",
-    "sanity-plugin-media": "^1.4.11",
-    "sanity-plugin-mux-input": "^1.1.8",
-    "styled-components": "^5.2.0"
+    "@sanity/color-input": "^3.1.1",
+    "@sanity/dashboard": "^3.1.6",
+    "@sanity/eslint-config-studio": "^4.0.0",
+    "@sanity/vision": "^3.36.4",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "^3.36.4",
+    "sanity-plugin-media": "^2.2.5",
+    "sanity-plugin-mux-input": "^2.2.4",
+    "styled-components": "^5.3.6"
   }
 }
