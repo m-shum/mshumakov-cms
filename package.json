@@ -14,13 +14,8 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^2.33.3",
     "@sanity/color-input": "^2.33.3",
-    "@sanity/core": "^2.33.3",
     "@sanity/dashboard": "^2.33.3",
-    "@sanity/default-layout": "^2.33.3",
-    "@sanity/default-login": "^2.33.3",
-    "@sanity/desk-tool": "^2.33.3",
     "@sanity/eslint-config-studio": "^2.0.0",
     "@sanity/vision": "^2.33.3",
     "eslint": "^8.6.0",
