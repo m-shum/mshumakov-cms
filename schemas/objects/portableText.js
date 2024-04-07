@@ -1,4 +1,4 @@
-import { defineType, defineArrayMember } from 'sanity'
+import { defineType, defineArrayMember, defineField } from 'sanity'
 
 export default defineType({
   name: 'portableText',
@@ -27,6 +27,8 @@ export default defineType({
         decorators: [
           { title: 'Strong', value: 'strong' },
           { title: 'Emphasis', value: 'em' },
+          { title: 'Strike-through', value: 'strike-through' },
+          { title: 'Code', value: 'code' },
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -35,13 +37,30 @@ export default defineType({
             type: 'object',
             title: 'URL',
             fields: [
-              {
+              defineField({
                 title: 'URL',
                 name: 'href',
                 type: 'url',
                 validation: (Rule) =>
                   Rule.uri({ scheme: ['tel', 'mailto', 'http', 'https'] }),
-              },
+              }),
+            ],
+          },
+          {
+            name: 'internalLink',
+            type: 'object',
+            title: 'Internal link',
+            fields: [
+              defineField({
+                name: 'reference',
+                type: 'reference',
+                title: 'Reference',
+                to: [
+                  { type: 'journalEntry' },
+                  { type: 'playgroundItem' },
+                  { type: 'project' },
+                ],
+              }),
             ],
           },
         ],
@@ -50,6 +69,9 @@ export default defineType({
     {
       type: 'image',
       options: { hotspot: true },
+    },
+    {
+      type: 'code',
     },
   ],
 })
