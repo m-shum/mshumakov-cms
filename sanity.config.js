@@ -1,8 +1,12 @@
 import { defineConfig } from 'sanity'
 import { structureTool } from 'sanity/structure'
 import { visionTool } from '@sanity/vision'
+import { colorInput } from '@sanity/color-input'
 import schemas from './schemas/schema'
 import deskStructure from './deskStructure'
+import { dashboardTool } from '@sanity/dashboard'
+import { media } from 'sanity-plugin-media'
+import { muxInput } from 'sanity-plugin-mux-input'
 
 export default defineConfig({
   title: 'portfolio-cms',
@@ -13,6 +17,10 @@ export default defineConfig({
       structure: deskStructure,
     }),
     visionTool(),
+    colorInput(),
+    dashboardTool({}),
+    media(),
+    muxInput(),
   ],
   tools: (prev) => {
     // 👇 Uses environment variables set by Vite in development mode
