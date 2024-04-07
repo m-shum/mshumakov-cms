@@ -5,7 +5,7 @@ import contactLinks from './objects/contactLinks'
 import portableText from './objects/portableText'
 import projectReference from './objects/projectReference'
 
-export default [
+export const schemaTypes = [
   contactLinks,
   info,
   project,

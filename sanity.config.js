@@ -2,7 +2,7 @@ import { defineConfig } from 'sanity'
 import { structureTool } from 'sanity/structure'
 import { visionTool } from '@sanity/vision'
 import { colorInput } from '@sanity/color-input'
-import schemas from './schemas/schema'
+import { schemaTypes } from './schemas'
 import deskStructure from './deskStructure'
 import { dashboardTool } from '@sanity/dashboard'
 import { media } from 'sanity-plugin-media'
@@ -30,6 +30,6 @@ export default defineConfig({
     return prev.filter((tool) => tool.name !== 'vision')
   },
   schema: {
-    types: [schemas],
+    types: [schemaTypes],
   },
 })
