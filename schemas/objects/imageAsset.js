@@ -1,18 +1,20 @@
-export default {
-  name: "imageAsset",
-  title: "Image",
-  type: "image",
+import { defineType } from 'sanity'
+
+export default defineType({
+  name: 'imageAsset',
+  title: 'Image',
+  type: 'image',
   fields: [
     {
-      name: "caption",
-      title: "Caption",
-      type: "string",
+      name: 'caption',
+      title: 'Caption',
+      type: 'string',
     },
     {
-      name: "assetGroup",
-      title: "Asset Group",
-      type: "number",
+      name: 'assetGroup',
+      title: 'Asset Group',
+      type: 'number',
     },
   ],
-  options: { metadata: ["dimensions"] },
-};
+  options: { metadata: ['dimensions'] },
+})

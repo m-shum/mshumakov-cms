@@ -1,36 +1,38 @@
-export default {
-  name: "info",
-  title: "Info",
-  type: "document",
+import { defineType } from 'sanity'
+
+export default defineType({
+  name: 'info',
+  title: 'Info',
+  type: 'document',
   fields: [
     {
-      name: "bio",
-      title: "Bio",
-      type: "portableText",
+      name: 'bio',
+      title: 'Bio',
+      type: 'portableText',
     },
     {
-      name: "metaDescription",
-      title: "Meta Description",
-      type: "string",
+      name: 'metaDescription',
+      title: 'Meta Description',
+      type: 'string',
     },
     {
-      name: "cover",
-      title: "Cover",
-      type: "image",
+      name: 'cover',
+      title: 'Cover',
+      type: 'image',
       options: {
-        metadata: ["dimensions"],
+        metadata: ['dimensions'],
       },
     },
     {
-      name: "contactLinks",
-      title: "Contact Links",
-      type: "contactLinks",
+      name: 'contactLinks',
+      title: 'Contact Links',
+      type: 'contactLinks',
     },
     {
-      name: "resume",
-      title: "Resume",
-      type: "file",
-      accept: ".pdf",
+      name: 'resume',
+      title: 'Resume',
+      type: 'file',
+      accept: '.pdf',
     },
   ],
-};
+})
