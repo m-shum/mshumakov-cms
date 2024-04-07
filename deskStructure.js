@@ -1,24 +1,22 @@
-import S from "@sanity/desk-tool/structure-builder";
-
 const hiddenDocTypes = (listItem) =>
-  !["project", "projectsArray", "media.tag"].includes(listItem.getId());
+  !['project', 'projectsArray', 'media.tag'].includes(listItem.getId())
 
-export default () =>
+export default (S) =>
   S.list()
-    .title("Content")
+    .title('Content')
     .items([
       S.listItem()
-        .title("Index Page Projects")
+        .title('Index Page Projects')
         .child(
           S.editor()
-            .id("projectsArray")
-            .documentId("projectsArray")
-            .schemaType("projectsArray")
+            .id('projectsArray')
+            .documentId('projectsArray')
+            .schemaType('projectsArray')
         ),
       S.listItem()
-        .title("Library")
-        .schemaType("project")
-        .child(S.documentTypeList("project").title("Library")),
+        .title('Library')
+        .schemaType('project')
+        .child(S.documentTypeList('project').title('Library')),
 
       ...S.documentTypeListItems().filter(hiddenDocTypes),
-    ]);
+    ])
