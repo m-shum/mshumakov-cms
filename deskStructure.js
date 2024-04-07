@@ -1,5 +1,11 @@
 const hiddenDocTypes = (listItem) =>
-  !['project', 'projectsArray', 'media.tag'].includes(listItem.getId())
+  ![
+    'project',
+    'projectsArray',
+    'journalEntry',
+    'journalEntriesArray',
+    'media.tag',
+  ].includes(listItem.getId())
 
 export default (S) =>
   S.list()
@@ -14,9 +20,13 @@ export default (S) =>
             .schemaType('projectsArray')
         ),
       S.listItem()
-        .title('Library')
+        .title('Projects Library')
         .schemaType('project')
-        .child(S.documentTypeList('project').title('Library')),
+        .child(S.documentTypeList('project').title('Projects Library')),
+      S.listItem()
+        .title('Journal Entries')
+        .schemaType('journalEntry')
+        .child(S.documentTypeList('journalEntry').title('Journal Entries')),
 
       ...S.documentTypeListItems().filter(hiddenDocTypes),
     ])
