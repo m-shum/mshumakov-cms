@@ -4,6 +4,8 @@ const hiddenDocTypes = (listItem) =>
     'projectsArray',
     'journalEntry',
     'journalEntriesArray',
+    'playgroundItem',
+    'playgroundItemsArray',
     'media.tag',
   ].includes(listItem.getId())
 
@@ -27,6 +29,10 @@ export default (S) =>
         .title('Journal Entries')
         .schemaType('journalEntry')
         .child(S.documentTypeList('journalEntry').title('Journal Entries')),
+      S.listItem()
+        .title('Playground')
+        .schemaType('playgroundItem')
+        .child(S.documentTypeList('playgroundItem').title('Playground')),
 
       ...S.documentTypeListItems().filter(hiddenDocTypes),
     ])
