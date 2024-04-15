@@ -71,7 +71,18 @@ export default defineType({
       options: { hotspot: true },
     },
     {
+      name: 'codeInput',
+      title: 'Code Input',
       type: 'code',
+      options: {
+        language: 'javascript',
+        languageAlternatives: [
+          { title: 'Javascript', value: 'javascript' },
+          { title: 'HTML', value: 'html' },
+          { title: 'CSS', value: 'css' },
+        ],
+        withFilename: true,
+      },
     },
   ],
 })
