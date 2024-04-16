@@ -6,6 +6,7 @@ import { schemaTypes } from './schemas'
 import { colorInput } from '@sanity/color-input'
 import { media } from 'sanity-plugin-media'
 import { codeInput } from '@sanity/code-input'
+import { tags } from 'sanity-plugin-tags'
 import deskStructure from './deskStructure'
 
 export default defineConfig({
@@ -24,6 +25,7 @@ export default defineConfig({
     colorInput(),
     media(),
     codeInput(),
+    tags(),
   ],
   tools: (prev) => {
     // 👇 Uses environment variables set by Vite in development mode

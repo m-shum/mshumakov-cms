@@ -16,10 +16,12 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'datePublished',
-      title: 'Date Published',
-      type: 'date',
-      initialValue: () => new Date().toISOString(),
+      name: 'Tags',
+      title: 'Tags',
+      type: 'tags',
+      options: {
+        includeFromRelated: 'Tags',
+      },
     }),
     defineField({
       name: 'cover',

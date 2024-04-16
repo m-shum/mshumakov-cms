@@ -26,6 +26,14 @@ export default defineType({
       type: 'image',
       options: { metadata: ['dimensions'] },
     }),
+    defineField({
+      name: 'Tags',
+      title: 'Tags',
+      type: 'tags',
+      options: {
+        includeFromRelated: 'Tags',
+      },
+    }),
   ],
   preview: {
     select: {
