@@ -1,6 +1,6 @@
 import { defineType, defineField } from 'sanity'
 
-const services = ['email', 'github', 'twitter', 'instagram']
+const services = ['email', 'github', 'twitter', 'instagram', 'codepen']
 
 export default defineType({
   name: 'contactLinks',
