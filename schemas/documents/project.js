@@ -116,6 +116,11 @@ export default defineType({
               title: 'Frame Color',
               type: 'color',
             }),
+            defineField({
+              name: 'background',
+              title: 'Background',
+              type: 'image',
+            }),
           ],
         }),
         defineArrayMember({
@@ -167,6 +172,11 @@ export default defineType({
               name: 'height',
               title: 'Height',
               type: 'number',
+            }),
+            defineField({
+              name: 'background',
+              title: 'Background',
+              type: 'image',
             }),
           ],
         }),
