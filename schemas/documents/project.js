@@ -74,6 +74,13 @@ export default defineType({
       title: 'Cover',
       type: 'image',
       options: { metadata: ['dimensions'] },
+      fields: [
+        defineField({
+          name: 'background',
+          title: 'Background',
+          type: 'image',
+        }),
+      ],
     }),
     defineField({
       name: 'assets',
